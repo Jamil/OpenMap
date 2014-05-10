@@ -24,7 +24,7 @@ extern NSMutableArray *arr;
     NSArray **allProjects = [parsed valueForKey:@"data"];
     NSinteger int_arr[500000] = {0};
     
-    for (int i = 0; i < [allProjects count]; i++) {
+    for (int i = 0; i < allProjects.count; i++) {
         
         NSstring *projname = allProjects[i][13];
         NSinteger contract_num = [allProjects[i][19]) intvalue];
@@ -40,7 +40,7 @@ extern NSMutableArray *arr;
                 break;
             }
         }
-        
+        assert(j < arr.count);
     }
 }
 
