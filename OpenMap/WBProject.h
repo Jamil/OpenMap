@@ -10,8 +10,12 @@
 
 @interface WBProject : NSObject
 
-@property (nonatomic, retain) NSString *title;
-@property (nonatomic, retain) NSString *cost;
-@property (nonatomic, retain) NSArray *locations;
+@property (nonatomic, retain)   NSString *title;
+@property (nonatomic, retain)   NSString *cost;
+@property (nonatomic, retain)   NSString *amt;
+@property (nonatomic, retain)   NSString *abstract;
+@property (nonatomic)           NSInteger yearComplete;
+@property (nonatomic, retain)   NSArray *locations;
+@property (nonatomic, retain)   NSDictionary *sectors;
 
 @end

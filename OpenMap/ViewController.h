@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import <GoogleMaps/GoogleMaps.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <GMSMapViewDelegate>
 
 @property (nonatomic, retain) GMSMapView *mapView;
+@property (nonatomic, retain) NSDictionary *projects;
 
 @end

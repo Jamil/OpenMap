@@ -22,6 +22,28 @@
 		776BD651191DDE5600A99308 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776BD630191DDE5600A99308 /* UIKit.framework */; };
 		776BD659191DDE5600A99308 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 776BD657191DDE5600A99308 /* InfoPlist.strings */; };
 		776BD65B191DDE5600A99308 /* OpenMapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 776BD65A191DDE5600A99308 /* OpenMapTests.m */; };
+		776BD667191DDE9000A99308 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776BD666191DDE9000A99308 /* AVFoundation.framework */; };
+		776BD66C191DDEA100A99308 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776BD668191DDEA100A99308 /* CoreData.framework */; };
+		776BD66D191DDEA100A99308 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776BD669191DDEA100A99308 /* CoreFoundation.framework */; };
+		776BD66E191DDEA100A99308 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776BD66A191DDEA100A99308 /* CoreText.framework */; };
+		776BD66F191DDEA100A99308 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776BD66B191DDEA100A99308 /* GLKit.framework */; };
+		776BD671191DDEAB00A99308 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776BD670191DDEAB00A99308 /* ImageIO.framework */; };
+		776BD675191DDEDC00A99308 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 776BD672191DDEDC00A99308 /* libc++.dylib */; };
+		776BD676191DDEDC00A99308 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 776BD673191DDEDC00A99308 /* libicucore.dylib */; };
+		776BD677191DDEDC00A99308 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 776BD674191DDEDC00A99308 /* libz.dylib */; };
+		776BD67B191DDEEE00A99308 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776BD678191DDEEE00A99308 /* OpenGLES.framework */; };
+		776BD67C191DDEEE00A99308 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776BD679191DDEEE00A99308 /* QuartzCore.framework */; };
+		776BD67D191DDEEE00A99308 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776BD67A191DDEEE00A99308 /* SystemConfiguration.framework */; };
+		776BD682191DE39B00A99308 /* GoogleMaps.framework in Resources */ = {isa = PBXBuildFile; fileRef = 776BD681191DE39B00A99308 /* GoogleMaps.framework */; };
+		776BD683191DE3CD00A99308 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776BD681191DE39B00A99308 /* GoogleMaps.framework */; };
+		776BD685191DE45500A99308 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 776BD684191DE45500A99308 /* GoogleMaps.bundle */; };
+		776BD688191DF4FE00A99308 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 776BD686191DF4FE00A99308 /* DataModel.xcdatamodeld */; };
+		776BD699191E05EC00A99308 /* WBProjectParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 776BD698191E05EC00A99308 /* WBProjectParser.m */; };
+		776BD839191E2B8100A99308 /* WBProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 776BD838191E2B8100A99308 /* WBProject.m */; };
+		776BD83C191E478700A99308 /* WBProjectViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 776BD83B191E478700A99308 /* WBProjectViewViewController.m */; };
+		776BD843191E56E500A99308 /* JBBarChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 776BD83E191E56E500A99308 /* JBBarChartView.m */; };
+		776BD844191E56E500A99308 /* JBChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 776BD840191E56E500A99308 /* JBChartView.m */; };
+		776BD845191E56E500A99308 /* JBLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 776BD842191E56E500A99308 /* JBLineChartView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +77,35 @@
 		776BD656191DDE5600A99308 /* OpenMapTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OpenMapTests-Info.plist"; sourceTree = "<group>"; };
 		776BD658191DDE5600A99308 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		776BD65A191DDE5600A99308 /* OpenMapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenMapTests.m; sourceTree = "<group>"; };
+		776BD666191DDE9000A99308 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		776BD668191DDEA100A99308 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		776BD669191DDEA100A99308 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		776BD66A191DDEA100A99308 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		776BD66B191DDEA100A99308 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		776BD670191DDEAB00A99308 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		776BD672191DDEDC00A99308 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		776BD673191DDEDC00A99308 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		776BD674191DDEDC00A99308 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		776BD678191DDEEE00A99308 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		776BD679191DDEEE00A99308 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		776BD67A191DDEEE00A99308 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		776BD67E191DDF6700A99308 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = "../../../../Downloads/GoogleMaps-iOS-1.8.0/GoogleMaps.framework"; sourceTree = "<group>"; };
+		776BD680191DDFA300A99308 /* keys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = keys.h; sourceTree = "<group>"; };
+		776BD681191DE39B00A99308 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = OpenMap/GoogleMaps.framework; sourceTree = "<group>"; };
+		776BD684191DE45500A99308 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = OpenMap/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		776BD687191DF4FE00A99308 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		776BD697191E05EC00A99308 /* WBProjectParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBProjectParser.h; sourceTree = "<group>"; };
+		776BD698191E05EC00A99308 /* WBProjectParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBProjectParser.m; sourceTree = "<group>"; };
+		776BD837191E2B8100A99308 /* WBProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBProject.h; sourceTree = "<group>"; };
+		776BD838191E2B8100A99308 /* WBProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBProject.m; sourceTree = "<group>"; };
+		776BD83A191E478700A99308 /* WBProjectViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBProjectViewViewController.h; sourceTree = "<group>"; };
+		776BD83B191E478700A99308 /* WBProjectViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBProjectViewViewController.m; sourceTree = "<group>"; };
+		776BD83D191E56E500A99308 /* JBBarChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBBarChartView.h; sourceTree = "<group>"; };
+		776BD83E191E56E500A99308 /* JBBarChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBBarChartView.m; sourceTree = "<group>"; };
+		776BD83F191E56E500A99308 /* JBChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBChartView.h; sourceTree = "<group>"; };
+		776BD840191E56E500A99308 /* JBChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBChartView.m; sourceTree = "<group>"; };
+		776BD841191E56E500A99308 /* JBLineChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBLineChartView.h; sourceTree = "<group>"; };
+		776BD842191E56E500A99308 /* JBLineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBLineChartView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +113,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				776BD683191DE3CD00A99308 /* GoogleMaps.framework in Frameworks */,
+				776BD67B191DDEEE00A99308 /* OpenGLES.framework in Frameworks */,
+				776BD67C191DDEEE00A99308 /* QuartzCore.framework in Frameworks */,
+				776BD67D191DDEEE00A99308 /* SystemConfiguration.framework in Frameworks */,
+				776BD675191DDEDC00A99308 /* libc++.dylib in Frameworks */,
+				776BD676191DDEDC00A99308 /* libicucore.dylib in Frameworks */,
+				776BD677191DDEDC00A99308 /* libz.dylib in Frameworks */,
+				776BD671191DDEAB00A99308 /* ImageIO.framework in Frameworks */,
+				776BD66C191DDEA100A99308 /* CoreData.framework in Frameworks */,
+				776BD66D191DDEA100A99308 /* CoreFoundation.framework in Frameworks */,
+				776BD66E191DDEA100A99308 /* CoreText.framework in Frameworks */,
+				776BD66F191DDEA100A99308 /* GLKit.framework in Frameworks */,
+				776BD667191DDE9000A99308 /* AVFoundation.framework in Frameworks */,
 				776BD62F191DDE5600A99308 /* CoreGraphics.framework in Frameworks */,
 				776BD631191DDE5600A99308 /* UIKit.framework in Frameworks */,
 				776BD62D191DDE5600A99308 /* Foundation.framework in Frameworks */,
@@ -103,6 +167,21 @@
 		776BD62B191DDE5600A99308 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				776BD681191DE39B00A99308 /* GoogleMaps.framework */,
+				776BD684191DE45500A99308 /* GoogleMaps.bundle */,
+				776BD67E191DDF6700A99308 /* GoogleMaps.framework */,
+				776BD678191DDEEE00A99308 /* OpenGLES.framework */,
+				776BD679191DDEEE00A99308 /* QuartzCore.framework */,
+				776BD67A191DDEEE00A99308 /* SystemConfiguration.framework */,
+				776BD672191DDEDC00A99308 /* libc++.dylib */,
+				776BD673191DDEDC00A99308 /* libicucore.dylib */,
+				776BD674191DDEDC00A99308 /* libz.dylib */,
+				776BD670191DDEAB00A99308 /* ImageIO.framework */,
+				776BD668191DDEA100A99308 /* CoreData.framework */,
+				776BD669191DDEA100A99308 /* CoreFoundation.framework */,
+				776BD66A191DDEA100A99308 /* CoreText.framework */,
+				776BD66B191DDEA100A99308 /* GLKit.framework */,
+				776BD666191DDE9000A99308 /* AVFoundation.framework */,
 				776BD62C191DDE5600A99308 /* Foundation.framework */,
 				776BD62E191DDE5600A99308 /* CoreGraphics.framework */,
 				776BD630191DDE5600A99308 /* UIKit.framework */,
@@ -114,12 +193,12 @@
 		776BD632191DDE5600A99308 /* OpenMap */ = {
 			isa = PBXGroup;
 			children = (
-				776BD63B191DDE5600A99308 /* AppDelegate.h */,
-				776BD63C191DDE5600A99308 /* AppDelegate.m */,
+				776BD68C191DF52200A99308 /* Resources */,
+				776BD689191DF50800A99308 /* Model */,
+				776BD68B191DF50F00A99308 /* Controller */,
+				776BD68A191DF50C00A99308 /* View */,
 				776BD63E191DDE5600A99308 /* Main_iPhone.storyboard */,
 				776BD641191DDE5600A99308 /* Main_iPad.storyboard */,
-				776BD644191DDE5600A99308 /* ViewController.h */,
-				776BD645191DDE5600A99308 /* ViewController.m */,
 				776BD647191DDE5600A99308 /* Images.xcassets */,
 				776BD633191DDE5600A99308 /* Supporting Files */,
 			);
@@ -153,6 +232,68 @@
 				776BD657191DDE5600A99308 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		776BD689191DF50800A99308 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				776BD846191E56E800A99308 /* External */,
+				776BD686191DF4FE00A99308 /* DataModel.xcdatamodeld */,
+				776BD697191E05EC00A99308 /* WBProjectParser.h */,
+				776BD698191E05EC00A99308 /* WBProjectParser.m */,
+				776BD837191E2B8100A99308 /* WBProject.h */,
+				776BD838191E2B8100A99308 /* WBProject.m */,
+				776BD63B191DDE5600A99308 /* AppDelegate.h */,
+				776BD63C191DDE5600A99308 /* AppDelegate.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		776BD68A191DF50C00A99308 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		776BD68B191DF50F00A99308 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				776BD644191DDE5600A99308 /* ViewController.h */,
+				776BD645191DDE5600A99308 /* ViewController.m */,
+				776BD83A191E478700A99308 /* WBProjectViewViewController.h */,
+				776BD83B191E478700A99308 /* WBProjectViewViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		776BD68C191DF52200A99308 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				776BD680191DDFA300A99308 /* keys.h */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		776BD846191E56E800A99308 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				776BD847191E7FF300A99308 /* JBChartView */,
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
+		776BD847191E7FF300A99308 /* JBChartView */ = {
+			isa = PBXGroup;
+			children = (
+				776BD83D191E56E500A99308 /* JBBarChartView.h */,
+				776BD83E191E56E500A99308 /* JBBarChartView.m */,
+				776BD83F191E56E500A99308 /* JBChartView.h */,
+				776BD840191E56E500A99308 /* JBChartView.m */,
+				776BD841191E56E500A99308 /* JBLineChartView.h */,
+				776BD842191E56E500A99308 /* JBLineChartView.m */,
+			);
+			name = JBChartView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +372,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				776BD682191DE39B00A99308 /* GoogleMaps.framework in Resources */,
 				776BD643191DDE5600A99308 /* Main_iPad.storyboard in Resources */,
 				776BD648191DDE5600A99308 /* Images.xcassets in Resources */,
+				776BD685191DE45500A99308 /* GoogleMaps.bundle in Resources */,
 				776BD640191DDE5600A99308 /* Main_iPhone.storyboard in Resources */,
 				776BD637191DDE5600A99308 /* InfoPlist.strings in Resources */,
 			);
@@ -254,6 +397,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				776BD646191DDE5600A99308 /* ViewController.m in Sources */,
+				776BD844191E56E500A99308 /* JBChartView.m in Sources */,
+				776BD843191E56E500A99308 /* JBBarChartView.m in Sources */,
+				776BD688191DF4FE00A99308 /* DataModel.xcdatamodeld in Sources */,
+				776BD839191E2B8100A99308 /* WBProject.m in Sources */,
+				776BD845191E56E500A99308 /* JBLineChartView.m in Sources */,
+				776BD83C191E478700A99308 /* WBProjectViewViewController.m in Sources */,
+				776BD699191E05EC00A99308 /* WBProjectParser.m in Sources */,
 				776BD63D191DDE5600A99308 /* AppDelegate.m in Sources */,
 				776BD639191DDE5600A99308 /* main.m in Sources */,
 			);
@@ -392,9 +542,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/jamildhanani/Downloads/GoogleMaps-iOS-1.8.0",
+					/Users/jamildhanani/Developer/iOS/Projects/OpenMap/OpenMap,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OpenMap/OpenMap-Prefix.pch";
 				INFOPLIST_FILE = "OpenMap/OpenMap-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -405,9 +561,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/jamildhanani/Downloads/GoogleMaps-iOS-1.8.0",
+					/Users/jamildhanani/Developer/iOS/Projects/OpenMap/OpenMap,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OpenMap/OpenMap-Prefix.pch";
 				INFOPLIST_FILE = "OpenMap/OpenMap-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -484,6 +646,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		776BD686191DF4FE00A99308 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				776BD687191DF4FE00A99308 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 776BD687191DF4FE00A99308 /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 776BD621191DDE5600A99308 /* Project object */;
 }
