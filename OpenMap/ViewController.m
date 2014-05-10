@@ -67,9 +67,36 @@
             
             NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:[NSDate date]];
             NSInteger year = [components year];
-            if (currentProj.yearComplete <= )
             
-            marker.icon = [UIImage imageNamed:@"pin"];
+            NSNumberFormatter * f = [[NSNumberFormatter alloc] init];
+            [f setNumberStyle:NSNumberFormatterDecimalStyle];
+            NSNumber *totalcost = [f numberFromString:currentProj.cost];
+            
+            NSLog(@"Cost: %d", [totalcost integerValue]);
+            NSLog(@"Year: %d", currentProj.yearComplete);
+            
+            if (currentProj.yearComplete < year) {
+                if ([totalcost integerValue] <= 50000000) {
+                    marker.icon = [UIImage imageNamed:@"greenpin10"];
+                }
+                else if ([totalcost integerValue] <= 100000000) {
+                    marker.icon = [UIImage imageNamed:@"greenpin30"];
+                }
+                else {
+                    marker.icon = [UIImage imageNamed:@"greenpin50"];
+                }
+            }
+            else {
+                if ([totalcost integerValue] <= 50000000) {
+                    marker.icon = [UIImage imageNamed:@"redpin10"];
+                }
+                else if ([totalcost integerValue] <= 100000000) {
+                    marker.icon = [UIImage imageNamed:@"redpin30"];
+                }
+                else {
+                    marker.icon = [UIImage imageNamed:@"redpin50"];
+                }
+            }
         }
         
         // Add to dictionary

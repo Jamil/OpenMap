@@ -7,7 +7,7 @@
         <!--View Controller-->
         <scene sceneID="SpN-DT-5cN">
             <objects>
-                <viewController id="KLQ-JP-6U1" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FiltersViewController" id="KLQ-JP-6U1" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tfM-d0-fPE"/>
                         <viewControllerLayoutGuide type="bottom" id="ijP-Mq-r8P"/>
