@@ -7,6 +7,8 @@
 #import "WBProjectParser.h"
 #import "WBProject.h"
 
+extern NSMutableArray *arr;
+
 @implementation WBProjectParser
 
 +(NSArray*)parseFile {
@@ -20,17 +22,26 @@
                           error:&error];
     
     NSArray **allProjects = [parsed valueForKey:@"data"];
-    NSinteger int_arr[500000] = 0;
+    NSinteger int_arr[500000] = {0};
     
     for (int i = 0; i < [allProjects count]; i++) {
         
-        NSinteger = atoi[allProjects[i][26]) intvalue];
-        NSString *contr_name = allProjects[i][23];
+        NSstring *projname = allProjects[i][13];
+        NSinteger contract_num = [allProjects[i][19]) intvalue];
+        if(int_arr[contract_num-1100000] == 0)
+            int_arr[contract_num-1100000]=1;
+        else
+            continue;
+        NSString *contractor_name = allProjects[i][23];
         
-        project.contr_name = contr_name;
+        for(int j = 0; j < arr.count; j++) {
+            if(strcmp(arr[i].title, projname) == 0) {
+                arr.contractor_name = contractor_name;
+                break;
+            }
+        }
         
     }
-    return arr;
 }
 
 @end
