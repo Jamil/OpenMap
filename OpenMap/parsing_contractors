@@ -40,7 +40,7 @@ extern NSMutableArray *arr;
                 break;
             }
         }
-        assert(j < arr.count);
+        //assert(j < arr.count);
     }
 }
 
