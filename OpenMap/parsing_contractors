@@ -1,0 +1,36 @@
+//
+//  parsing_contractors.m
+//  OpenMap
+//
+
+#import <CoreLocation/CoreLocation.h>
+#import "WBProjectParser.h"
+#import "WBProject.h"
+
+@implementation WBProjectParser
+
++(NSArray*)parseFile {
+    
+    NSData *jsonData = [NSData dataWithContentsOfURL:[NSURL URLWithString:@JSON_CONTRACTORS
+    
+    NSError *error;
+    NSDictionary *parsed = [NSJSONSerialization
+                          JSONObjectWithData:jsonData
+                          options:kNilOptions
+                          error:&error];
+    
+    NSArray **allProjects = [parsed valueForKey:@"data"];
+    NSinteger int_arr[500000] = 0;
+    
+    for (int i = 0; i < [allProjects count]; i++) {
+        
+        NSinteger = atoi[allProjects[i][26]) intvalue];
+        NSString *contr_name = allProjects[i][23];
+        
+        project.contr_name = contr_name;
+        
+    }
+    return arr;
+}
+
+@end
