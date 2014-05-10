@@ -9,6 +9,6 @@
 #ifndef OpenMap_keys_h
 #define OpenMap_keys_h
 
-
+#define API_KEY @"AIzaSyAA-0oM0oyVrTSVReIruxRNekxaZuzGKlM"
 
 #endif
