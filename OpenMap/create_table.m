@@ -28,7 +28,7 @@ void add_entry(NSString name, node* array){
   array->next = new;
 }
 
-fill_contractors_array(){
+void fill_contractors_array(){
   contractor_array = NULL;
   for(int i=0; i<arr.count; i++){
     node* a = (node*)find_entry(arr[i].contractor_name, contractor_array)
