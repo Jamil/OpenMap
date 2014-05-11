@@ -41,7 +41,7 @@
             WBProject *p = arr[j];
             if([p.PID isEqualToString:projname]) {
                 NSLog(@"Match: %@, %@", projname, contractor_name);
-                p.contractorName = contractor_name;
+                p.contractorName = [contractor_name capitalizedString];
                 break;
             }
         }

@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "JBLineChartView.h"
+#import "JBBarChartView.h"
 
-@interface ContractsViewController : UIViewController
+@interface ContractsViewController : UIViewController <JBBarChartViewDataSource, JBBarChartViewDelegate>
 
-@property (nonatomic, retain) JBLineChartView *jbl;
+@property (nonatomic, retain) JBBarChartView *jbc;
 
 @end

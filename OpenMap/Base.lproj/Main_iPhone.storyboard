@@ -15,8 +15,41 @@
                     <view key="view" contentMode="scaleToFill" id="WI3-Sw-hcI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0VS-PZ-6jN">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="2Jq-yQ-n8Y"/>
+                                    <barButtonItem title="Dismiss" id="4vv-yw-uCa">
+                                        <connections>
+                                            <segue destination="vXZ-lx-hvc" kind="custom" customClass="DismissSegue" id="OEF-hI-cse"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="graph.png" translatesAutoresizingMaskIntoConstraints="NO" id="2Nh-VF-eza">
+                                <rect key="frame" x="0.0" y="115" width="346" height="338"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contracts Awarded" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6CS-MB-1ra">
+                                <rect key="frame" x="38" y="67" width="244" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="26"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="by supplier" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IoH-Me-PLh">
+                                <rect key="frame" x="38" y="96" width="244" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="21"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="U2x-nq-hHZ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LVf-4Z-s2b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -58,7 +91,11 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="ssZ-Bs-a72"/>
-                                    <barButtonItem title="Contracts" id="6zN-Ga-35e"/>
+                                    <barButtonItem title="Contracts" id="6zN-Ga-35e">
+                                        <connections>
+                                            <segue destination="KLQ-JP-6U1" kind="modal" id="d6c-DC-31C"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="OxN-sY-ido"/>
                                     <barButtonItem title="Filters" id="bvq-5A-3aj">
                                         <connections>
@@ -416,6 +453,7 @@
         <image name="Email-Icon.png" width="256" height="256"/>
         <image name="Twitter-Icon.png" width="256" height="256"/>
         <image name="facebook" width="256" height="256"/>
+        <image name="graph.png" width="504" height="504"/>
         <image name="phone_icon.png" width="594" height="594"/>
         <image name="warn.png" width="300" height="267"/>
         <image name="write.png" width="594" height="594"/>
@@ -426,6 +464,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="VqB-sc-qjL"/>
+        <segue reference="OEF-hI-cse"/>
     </inferredMetricsTieBreakers>
 </document>

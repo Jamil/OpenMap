@@ -9,8 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "JBBarChartView.h"
 
-@interface CorruptionViewController : UIViewController
+@interface CorruptionViewController : UIViewController 
 
-@property (nonatomic, retain) JBBarChartView *jbc;
 
 @end

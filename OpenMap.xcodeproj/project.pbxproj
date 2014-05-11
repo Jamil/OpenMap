@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7741F256191EF3BA00B04F2D /* WBContractorParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7741F255191EF3BA00B04F2D /* WBContractorParser.m */; };
 		7741F258191EF6CB00B04F2D /* Contractors.json in Resources */ = {isa = PBXBuildFile; fileRef = 7741F257191EF6CB00B04F2D /* Contractors.json */; };
+		7741F25A191F0C4F00B04F2D /* graph.png in Resources */ = {isa = PBXBuildFile; fileRef = 7741F259191F0C4F00B04F2D /* graph.png */; };
 		776BD62D191DDE5600A99308 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776BD62C191DDE5600A99308 /* Foundation.framework */; };
 		776BD62F191DDE5600A99308 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776BD62E191DDE5600A99308 /* CoreGraphics.framework */; };
 		776BD631191DDE5600A99308 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776BD630191DDE5600A99308 /* UIKit.framework */; };
@@ -72,6 +73,7 @@
 		7741F254191EF3BA00B04F2D /* WBContractorParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WBContractorParser.h; path = ../WBContractorParser.h; sourceTree = "<group>"; };
 		7741F255191EF3BA00B04F2D /* WBContractorParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WBContractorParser.m; path = ../WBContractorParser.m; sourceTree = "<group>"; };
 		7741F257191EF6CB00B04F2D /* Contractors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contractors.json; sourceTree = "<group>"; };
+		7741F259191F0C4F00B04F2D /* graph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = graph.png; sourceTree = "<group>"; };
 		776BD629191DDE5600A99308 /* OpenMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		776BD62C191DDE5600A99308 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		776BD62E191DDE5600A99308 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -288,6 +290,7 @@
 		776BD68A191DF50C00A99308 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7741F259191F0C4F00B04F2D /* graph.png */,
 				776BD63E191DDE5600A99308 /* Main_iPhone.storyboard */,
 				776BD84B191EE8DC00A99308 /* DismissSegue.h */,
 				776BD84C191EE8DC00A99308 /* DismissSegue.m */,
@@ -425,6 +428,7 @@
 				776BD640191DDE5600A99308 /* Main_iPhone.storyboard in Resources */,
 				776BD637191DDE5600A99308 /* InfoPlist.strings in Resources */,
 				776BD854191EEF5900A99308 /* Email-Icon.png in Resources */,
+				7741F25A191F0C4F00B04F2D /* graph.png in Resources */,
 				776BD857191EEF5900A99308 /* Twitter-Icon.png in Resources */,
 				776BD85B191EEF9000A99308 /* warn.png in Resources */,
 				776BD856191EEF5900A99308 /* phone_icon.png in Resources */,
