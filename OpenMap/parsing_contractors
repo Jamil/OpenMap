@@ -1,7 +1,6 @@
-//
 //  parsing_contractors.m
 //  OpenMap
-//
+//  Suhaib
 
 #import <CoreLocation/CoreLocation.h>
 #import "WBProjectParser.h"
