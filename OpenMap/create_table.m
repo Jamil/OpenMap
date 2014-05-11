@@ -7,7 +7,11 @@ typedef struct _node{
 node *contractor_array;
 
 for(int i=0; i<arr.count; i++){
-  
+  node* a = (node*)find_entry(arr[i].contractor_name)
+  if(a != NULL)
+    a->contract_count++;
+  else
+    add_entry(arr[i].contractor_name);
 }
 
 find_entry(NSSTring name, node* array){
