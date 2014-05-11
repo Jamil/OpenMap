@@ -8,14 +8,14 @@ typedef struct _node{
 
 node *contractor_array;
 
-void* find_entry(NSSTring name, node* array){
-  void* next = array;
-  while(next != NULL){
-    if(strcmp((node*)next->name, name)==0)
+void* find_entry(NSString name, node* array){
+  void* present = array;
+  while(present != NULL){
+    if(strcmp((node*)present->name, name)==0)
       break;
-    next = array->next;
+    present = array->next;
   }
-  return next;
+  return present;
 }
 
 void add_entry(NSString name, node* array){
