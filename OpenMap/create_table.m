@@ -20,6 +20,12 @@ find_entry(NSSTring name, node* array){
   return next;
 }
 
-add_entry(NSString){
-
+add_entry(NSString name, node* array){
+  while(array->next != NULL)
+    array = array->next;
+  node* new = (node*)malloc(sizeof(node));
+  new->name = name;
+  new->contract_count = 1;
+  new->next = NULL;
+  array->next = new;
 }
