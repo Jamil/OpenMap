@@ -10,6 +10,7 @@
 #import "WBProjectViewViewController.h"
 #import "WBProject.h"
 #import "WBProjectParser.h"
+#import "keys.h"
 
 @interface ViewController ()
 
@@ -22,6 +23,7 @@
     [super viewDidLoad];
     [self setupMap];
     
+    self.addressField.delegate = self;
     NSArray *projects = [WBProjectParser parseFile];
     [self insertPins:projects];
 }
@@ -35,8 +37,55 @@
     self.mapView = [GMSMapView mapWithFrame:CGRectZero camera:camera];
     self.mapView.myLocationEnabled = YES;
     self.mapView.settings.rotateGestures = NO;
-    self.view = self.mapView;
+    self.mapView.frame = [[UIScreen mainScreen] bounds];
+    [self.view addSubview:self.mapView];
+    [self.view sendSubviewToBack:self.mapView];
     self.mapView.delegate = self;
+}
+
+- (BOOL) textFieldShouldReturn:(UITextField*)textField
+{
+    NSData *receivedData = [NSData dataWithContentsOfURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/geocode/json?address=%@&sensor=true&key=%@", textField.text, API_KEY]]];
+    
+    if (!receivedData) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Unable to fetch locations" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [alert show];
+        return FALSE;
+    }
+    
+    NSError *error;
+    NSDictionary *parsed = [NSJSONSerialization
+                            JSONObjectWithData:receivedData
+                            options:kNilOptions
+                            error:&error];
+    
+    //NSLog(@"%@", parsed);
+    
+    NSString *status = [parsed valueForKey:@"status"];
+    //NSLog(@"%@", status);
+    
+    if (![status isEqualToString:@"OK"]) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Could not find location" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [alert show];
+        return FALSE;
+    }
+    
+    NSDictionary *location = [[[parsed valueForKey:@"results"] valueForKey:@"geometry"] valueForKey:@"location"];
+    //NSLog(@"%@", location);
+    NSArray* latitudeS = [location valueForKey:@"lat"];
+    NSArray* longitudeS = [location valueForKey:@"lng"];
+    
+    float latitude = [[latitudeS firstObject] floatValue];
+    float longitude = [[longitudeS firstObject] floatValue];
+    
+    GMSCameraPosition *newPosition = [GMSCameraPosition cameraWithLatitude:latitude
+                                                                 longitude:longitude
+                                                                      zoom:8];
+    [self.mapView setCamera:newPosition];
+    
+    [textField resignFirstResponder];
+    
+    return TRUE;
 }
 
 -(void)mapView:(GMSMapView *)mapView didTapInfoWindowOfMarker:(GMSMarker *)marker {
@@ -46,7 +95,6 @@
     wbpView.wbp = proj;
     wbpView.loc = marker.snippet;
     [self presentViewController:wbpView animated:YES completion:nil];
-    
 }
 
 -(void)insertPins:(NSArray*)projects {
@@ -72,8 +120,8 @@
             [f setNumberStyle:NSNumberFormatterDecimalStyle];
             NSNumber *totalcost = [f numberFromString:currentProj.cost];
             
-            NSLog(@"Cost: %d", [totalcost integerValue]);
-            NSLog(@"Year: %d", currentProj.yearComplete);
+            //NSLog(@"Cost: %d", [totalcost integerValue]);
+            //NSLog(@"Year: %d", currentProj.yearComplete);
             
             if (currentProj.yearComplete < year) {
                 if ([totalcost integerValue] <= 50000000) {

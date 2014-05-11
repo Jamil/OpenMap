@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+typedef enum filterTypes {
+    ClimateChange, 
+} FilterTypes;
+
 @interface WBProjectParser : NSObject
 
 +(NSArray*)parseFile;

@@ -51,6 +51,7 @@
     self.titleLabel.text = self.wbp.title;
     self.regionLabel.text = self.loc;
     self.detailedDescriptionLabel.text = self.wbp.abstract;
+    self.contractorLabel.text = self.wbp.contractorName;
 }
 
 -(void)setupGraph {

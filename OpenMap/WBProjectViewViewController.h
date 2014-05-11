@@ -17,6 +17,7 @@
 
 @property (nonatomic, retain) IBOutlet UILabel              *titleLabel;
 @property (nonatomic, retain) IBOutlet UILabel              *regionLabel;
+@property (nonatomic, retain) IBOutlet UILabel              *contractorLabel;
 @property (nonatomic, retain) IBOutlet UITextView           *detailedDescriptionLabel;
 @property (nonatomic, retain) IBOutlet JBBarChartView       *barChart;
 

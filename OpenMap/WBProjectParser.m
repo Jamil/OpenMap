@@ -7,6 +7,7 @@
 //
 
 #import <CoreLocation/CoreLocation.h>
+#import "WBContractorParser.h"
 #import "WBProjectParser.h"
 #import "WBProject.h"
 
@@ -34,7 +35,7 @@
         
         WBProject *project = [[WBProject alloc] init];
         
-        NSLog(@"%@", projectData[i]);
+        //NSLog(@"%@", projectData[i]);
         
         NSString *projname = [[projectData[i] valueForKey:@"project_name"] capitalizedString];
         NSString *abstract = [[projectData[i] valueForKey:@"project_abstract"] valueForKey:@"cdata"];
@@ -54,6 +55,7 @@
             [coords addObject:coordinate];
         }
         
+        project.PID = projectIDs[i];
         project.title = projname;
         project.locations = coords;
         project.cost = cost;
@@ -63,6 +65,9 @@
         
         [arr addObject:project];
     }
+    
+    [WBContractorParser getContractorsForArray:arr];
+    
     return arr;
 }
 
