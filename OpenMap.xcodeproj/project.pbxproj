@@ -70,8 +70,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7741F254191EF3BA00B04F2D /* WBContractorParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WBContractorParser.h; path = ../WBContractorParser.h; sourceTree = "<group>"; };
-		7741F255191EF3BA00B04F2D /* WBContractorParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WBContractorParser.m; path = ../WBContractorParser.m; sourceTree = "<group>"; };
+		7741F254191EF3BA00B04F2D /* WBContractorParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBContractorParser.h; sourceTree = "<group>"; };
+		7741F255191EF3BA00B04F2D /* WBContractorParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBContractorParser.m; sourceTree = "<group>"; };
 		7741F257191EF6CB00B04F2D /* Contractors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contractors.json; sourceTree = "<group>"; };
 		7741F259191F0C4F00B04F2D /* graph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = graph.png; sourceTree = "<group>"; };
 		776BD629191DDE5600A99308 /* OpenMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
